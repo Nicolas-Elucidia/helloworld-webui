@@ -5,9 +5,10 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
-        "test": "ng test",
+        "test": "ng test --watch=false",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "deploy": "aws s3 sync dist/helloworld-webui s3://efm-helloworld-webui --profile dev002"
     },
     "private": true,
     "dependencies": {
