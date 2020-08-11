@@ -16,10 +16,10 @@ describe('AppComponent', () => {
         expect(app).toBeTruthy()
     })
 
-    it(`should have as title 'helloworld-webui'`, () => {
+    it(`should have as title 'Hello World Web UI'`, () => {
         const fixture = TestBed.createComponent(AppComponent)
         const app = fixture.componentInstance
-        expect(app.title).toEqual('helloworld-webui')
+        expect(app.title).toEqual('Hello World Web UI')
     })
 
     it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
         fixture.detectChanges()
         const compiled = fixture.nativeElement
         expect(compiled.querySelector('.content span').textContent).toContain(
-            'helloworld-webui app is running!'
+            'Hello World Web UI app is running!'
         )
     })
 })
