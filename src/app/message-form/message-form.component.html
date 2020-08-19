@@ -1,0 +1,20 @@
+<h3>Send Message</h3>
+
+<form [formGroup]="newMessageForm" #formDirective="ngForm" (ngSubmit)="onSubmit(newMessageForm.value, formDirective)">
+    <mat-form-field appearance="fill">
+        <input matInput id="from" type="text" formControlName="from" placeholder="* From" required>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <input matInput id="to" type="text" formControlName="to" placeholder="* To" required>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <textarea matInput id="body" type="text" formControlName="body" placeholder="Body..."></textarea>
+    </mat-form-field>
+    <br>
+
+    <button matInput class="button" type="submit">Send</button>
+</form>
